@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <None Pack="true" PackagePath="" Include="$(SolutionDir)/README.md"/>
+    </ItemGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Driver"/>
+    </ItemGroup>
+</Project>
