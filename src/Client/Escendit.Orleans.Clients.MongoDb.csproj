@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <None Pack="true" PackagePath="" Include="$(SolutionDir)/README.md" />
+    </ItemGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Orleans.Core" />
+      <PackageReference Include="MongoDB.Driver" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Update="Escendit.Tools.Branding">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Update="GitVersion.MsBuild">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Update="Microsoft.SourceLink.GitHub">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+</Project>
